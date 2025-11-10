@@ -1,0 +1,12 @@
+class Car:
+
+    def __init__(self,brand,year):
+        self.brand = brand
+        self.year = year
+        self.display()
+
+    def display(self):
+        print(self.brand,self.year)    
+
+c1 = Car("Toyota",1990)
+c2 = Car("Mahindra",2000)        
