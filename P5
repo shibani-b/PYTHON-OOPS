@@ -1,0 +1,19 @@
+class laptop:
+
+    def __init__(self,brand,price):
+        self.brand = brand
+        self.price = price
+
+    class Processor:
+
+        def __init__(self,core,speed):
+            self.core = core
+            self.speed = speed
+
+
+    def show(self,pro):
+        print(self.brand,self.price,pro.core,pro.speed,sep="\n")       
+
+l1 = laptop("lenovo",120000)
+p1 = laptop.Processor("i7",2)
+l1.show(p1)
