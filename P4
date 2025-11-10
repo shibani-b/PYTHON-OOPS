@@ -1,0 +1,15 @@
+class School:
+
+    def __init__(self,school_name):
+        self.school_name = school_name
+
+    class Student:
+
+        def __init__(self,name,grade):
+            self.name= name
+            self.grade=grade    
+
+sc1 = School("Nandha")
+st1 = School.Student("Hari",12) 
+
+print("School:",sc1.school_name,"\nName:",st1.name,"\nGrade:",st1.grade)
