@@ -1,0 +1,17 @@
+class Outer:
+
+    def showouter(self):
+        print("This is outer class")
+        
+
+    class inner:
+
+        def showinner(self):
+            print("This is inner class")
+
+
+
+o1 = Outer()
+o1.showouter()
+i1 = Outer.inner()
+i1.showinner()
