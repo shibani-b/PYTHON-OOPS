@@ -1,0 +1,27 @@
+class Student:
+
+    def __init__(self,name,marks):
+        self.name=name
+        self.__marks=marks
+
+    def getmarks(self):
+        return self.__marks
+
+    def setmarks(self,newmarks):
+        self.__marks=newmarks    
+
+    def grade(self):
+        if self.__marks>=90:
+            print("A")
+
+        elif self.__marks>=75:
+            print("B")
+
+        elif self.__marks>=60:
+            print("C")
+
+        else:
+            print("Fail")        
+
+s1=Student("Ram",98)
+s1.grade()
