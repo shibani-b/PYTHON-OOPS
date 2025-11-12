@@ -1,0 +1,31 @@
+class atm:
+
+    def __init__(self,pin,balance):
+        self.__pin=pin
+        self.__balance=balance
+
+    def check_pin(self,pin):
+        if self.__pin==pin:
+            print("sucessfully verified")
+
+        else:
+            print("Wrong pin")
+
+    def deposit(self,pin,amount):
+        if self.__pin==pin:
+             self.__balance+=amount
+
+        else:
+            print("Wrong pin") 
+
+    def withdraw(self,pin,amount):
+        if self.__pin==pin:
+             self.__balance-=amount
+
+        else:
+            print("Wrong pin")     
+
+
+a1=atm(123,20000)
+a1.check_pin(123)
+
