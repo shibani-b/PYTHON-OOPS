@@ -1,0 +1,35 @@
+from abc import ABC , abstractmethod
+
+class appliance(ABC):
+
+    @abstractmethod
+    def turnon(self):
+        pass
+
+    @abstractmethod
+    def turnoff(self):
+        pass
+
+class washingmachine(appliance):
+
+    def turnon(self):
+        print("Turning on") 
+
+
+    def turnoff(self):
+        print("Turning off")
+
+
+    def start(self):
+        print("Starting machine")
+
+
+class smartwm(washingmachine):
+
+    def wifi(self):
+        print("it has wifi system")                    
+
+
+s1=smartwm()
+s1.wifi()
+s1.turnon()
