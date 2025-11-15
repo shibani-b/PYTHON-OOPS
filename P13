@@ -1,0 +1,35 @@
+from abc import ABC, abstractmethod
+
+class payment(ABC):
+
+    @abstractmethod
+    def make_payment(self):
+        pass
+
+    @abstractmethod
+    def verify_account(self):
+        pass
+
+class credit(payment):
+
+    def make_payment(self):
+        print("paymentt done")
+
+  
+    def verify_account(self):
+        print("account verified")  
+
+class upi(payment):
+
+    def make_payment(self):
+        print("paymentt done")
+
+  
+    def verify_account(self):
+        print("account verified")   
+
+
+c1=credit()         
+c1.make_payment()
+u1=upi()
+u1.make_payment()
